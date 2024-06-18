@@ -1,7 +1,7 @@
 FROM node:alpine
-WORKDIR /app
+WORKDIR /my-app-react
 COPY package.json .
 RUN npm install
 COPY . .
-CMD ["npm","start"]
 EXPOSE 3000
+CMD ["npm","start"]
